@@ -1,0 +1,10 @@
+{
+  "name": "fengari-electron-example",
+  "version": "0.0.1",
+  "main": "main.js",
+  "license": "MIT",
+  "dependencies": {
+    "fengari": "fengari-lua/fengari",
+    "fengari-interop": "fengari-lua/fengari-interop"
+  }
+}

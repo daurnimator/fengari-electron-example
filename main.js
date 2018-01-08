@@ -1,5 +1,7 @@
 "use strict";
 
+const path = require("path");
+
 const {lua, lauxlib, lualib} = require('fengari');
 const interop = require('fengari-interop');
 
@@ -19,7 +21,7 @@ lua.lua_pop(L, 1); /* remove LOADED */
 lua.lua_pushstring(L, lua.to_luastring(lua.FENGARI_COPYRIGHT));
 lua.lua_setglobal(L, lua.to_luastring("_COPYRIGHT"));
 
-let ok = lauxlib.luaL_loadfile(L, lua.to_luastring("main.lua"));
+let ok = lauxlib.luaL_loadfile(L, lua.to_luastring(path.join(__dirname, "main.lua")));
 if (ok === lua.LUA_ERRSYNTAX) {
 	throw new SyntaxError(lua.lua_tojsstring(L, -1));
 }

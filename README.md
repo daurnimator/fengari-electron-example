@@ -4,5 +4,8 @@ This repository is an example of building an [electron](https://electronjs.org) 
 ## Running
 
 ```
-electron fengari-electron-example
+git clone https://github.com/thetrung/fengari-electron-example.git
+cd fengari-electron-example
+npm install
+npm start
 ```

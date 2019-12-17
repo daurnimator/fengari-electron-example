@@ -2,7 +2,13 @@
   "name": "fengari-electron-example",
   "version": "0.0.1",
   "main": "main.js",
+    "scripts": {
+    "start": "electron ."
+  },
   "license": "MIT",
+  "devDependencies": {
+    "electron": "^7.1.3"
+  },
   "dependencies": {
     "fengari": "fengari-lua/fengari",
     "fengari-interop": "fengari-lua/fengari-interop"
